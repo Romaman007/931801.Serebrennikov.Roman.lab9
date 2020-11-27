@@ -15,7 +15,8 @@ function add(e) {
         input2.innerText = '0' + e;
         k++;
         z++;
-    } else if (e.match(/[0-9]/)) {
+    }
+    else if (e.match(/[1-9]/)) {
         input1.value += e;
         input2.innerText += e;
         k = 0;
