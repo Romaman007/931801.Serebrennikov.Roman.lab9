@@ -48,8 +48,8 @@ function clear_All() {
 
 function clear_One() {
     if (input1.value.length - 1) {
-        if ((input1.value.length === 2 || input1.value[input1.value.length - 3] === ' ') && input1.value[input1.value.length - 2] === '0') {
-            k = 0;
+        if (input1.value[input1.value.length - 1] === '.') {
+            k=0;
             z = 0;
             input1.value = input1.value.substring(0, input1.value.length - 1);
             input2.innerText = input2.innerText.substring(0, input2.innerText.length - 1);
